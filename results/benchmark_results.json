@@ -1,0 +1,47 @@
+{
+  "hardware": {
+    "gpu_detected": "NVIDIA GeForce RTX 3050 Laptop GPU (6GB VRAM)",
+    "nvidia_driver": "610.60",
+    "cuda_umd_version": "13.3",
+    "host_os": "Windows 11 x64",
+    "host_compiler": "MSVC 19.50.35728 / g++ 14.2",
+    "cuda_toolkit_installed": false,
+    "reference_gpu": "NVIDIA RTX 4500 Ada Generation"
+  },
+  "network_dimensions": {
+    "batch_size": 256,
+    "input_size": 128,
+    "hidden_size": 64,
+    "output_size": 10,
+    "repeats_per_run": 20
+  },
+  "measured_runs": [
+    {
+      "run_index": 1,
+      "cpu_time_ms": 1.439255,
+      "repeats": 20
+    },
+    {
+      "run_index": 2,
+      "cpu_time_ms": 1.173065,
+      "repeats": 20
+    },
+    {
+      "run_index": 3,
+      "cpu_time_ms": 1.105805,
+      "repeats": 20
+    }
+  ],
+  "measured_summary": {
+    "average_cpu_ms": 1.239375,
+    "min_cpu_ms": 1.105805,
+    "max_cpu_ms": 1.439255
+  },
+  "reference_benchmark": {
+    "cpu_ms": 0.52686,
+    "gpu_kernel_only_ms": 0.026517,
+    "gpu_end_to_end_ms": 0.06601,
+    "kernel_only_speedup": 19.868763,
+    "end_to_end_speedup": 7.981518
+  }
+}

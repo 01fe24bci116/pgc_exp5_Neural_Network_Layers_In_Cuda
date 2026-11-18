@@ -1,0 +1,43 @@
+# Binaries and executables
+*.exe
+*.obj
+*.o
+*.lib
+*.exp
+*.dll
+bin/
+build/
+
+# CUDA / Visual Studio temporary files
+*.pdb
+*.ilk
+*.suo
+*.user
+*.cudafe1.c
+*.cudafe1.cpp
+*.cudafe1.stub.c
+*.cudafe1.stub.cpp
+*.hash
+*.ptx
+*.cubin
+*.fatbin
+.vs/
+x64/
+Debug/
+Release/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# System and editor temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,52 @@
+name: Repository Checks and Validation
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy matplotlib pillow
+
+      - name: Compile and Run CPU Validation Suite (GCC/Clang)
+        run: |
+          g++ -O3 -std=c++17 src/cpu_validation.cpp -o cpu_validation
+          ./cpu_validation
+
+      - name: Run Algorithmic Correctness Validation
+        run: |
+          python scripts/validate_results.py
+
+      - name: Verify Benchmark Pipeline
+        run: |
+          python scripts/run_benchmarks.py
+
+      - name: Verify Visualization Script
+        run: |
+          python scripts/generate_graphs.py
+
+      - name: Verify Documentation Links
+        run: |
+          test -f README.md
+          test -f docs/experiment_overview.md
+          test -f docs/implementation_details.md
+          test -f docs/performance_methodology.md
+          test -f docs/observations.md
+          test -f docs/troubleshooting.md
+          test -f docs/viva_questions.md
+          echo "All core documentation files verified successfully."
