@@ -11,6 +11,8 @@ build/
 # CUDA / Visual Studio temporary files
 *.pdb
 *.ilk
+*.iobj
+*.ipch
 *.suo
 *.user
 *.cudafe1.c
