@@ -387,10 +387,3 @@ pgc_exp5_Neural_Network_Layers_In_Cuda/
 
 ---
 
-#  Attribution and Source Acknowledgment
-
-This project is imported and migrated from:
-- **Source Repository**: [Sankalp2772/PGC-L5-NeuralNetwork-CUDA](https://github.com/Sankalp2772/PGC-L5-NeuralNetwork-CUDA)
-- **Original Author**: Sankalp Patil (B.Tech Computer Science & AI, KLE Technological University)
-- **Destination Repository**: [01fe24bci116/pgc_exp5_Neural_Network_Layers_In_Cuda](https://github.com/01fe24bci116/pgc_exp5_Neural_Network_Layers_In_Cuda)
-- **Licensing & Attribution Note**: All original source code, custom CUDA kernels, and documentation originate from the source repository. Attribution is preserved in full compliance with academic integrity and repository licensing terms.
