@@ -17,7 +17,7 @@ Input:        256 x 128
 Hidden layer: 256 x 64
 Output:       256 x 10
 
-Average CPU compute time: 1.439255 ms
+Average CPU compute time: 0.863440 ms
 Maximum absolute difference against lab reference: 0.000000
 Mathematical consistency check: MATCH (within tolerance)
 

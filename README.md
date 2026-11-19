@@ -347,7 +347,8 @@ pgc_exp5_Neural_Network_Layers_In_Cuda/
 │   ├── implementation_details.md
 │   ├── observations.md
 │   ├── performance_methodology.md
-│   └── troubleshooting.md
+│   ├── troubleshooting.md
+│   └── viva_questions.md
 ├── results/                 # Benchmarks, logs, and generated charts
 │   ├── execution_logs/
 │   ├── graphs/

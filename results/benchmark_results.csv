@@ -1,8 +1,8 @@
 Run,Scope,Hardware,Average Time (ms),Repeats,Speedup vs CPU
-1,CPU Forward Pass,Host CPU (Observed),1.439255,20,1.000x
-2,CPU Forward Pass,Host CPU (Observed),1.173065,20,1.000x
-3,CPU Forward Pass,Host CPU (Observed),1.105805,20,1.000x
-Mean,CPU Forward Pass,Host CPU (Observed),1.239375,20,1.000x
+1,CPU Forward Pass,Host CPU (Observed),0.86344,20,1.000x
+2,CPU Forward Pass,Host CPU (Observed),0.955965,20,1.000x
+3,CPU Forward Pass,Host CPU (Observed),0.72745,20,1.000x
+Mean,CPU Forward Pass,Host CPU (Observed),0.848952,20,1.000x
 Ref,CPU Forward Pass,RTX 4500 Host CPU,0.52686,20,1.000x
 Ref,GPU Kernel-Only,NVIDIA RTX 4500 Ada,0.026517,20,19.87x
 Ref,GPU End-to-End,NVIDIA RTX 4500 Ada,0.06601,20,7.98x
